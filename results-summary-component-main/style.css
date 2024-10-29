@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+:root{
+---Light-red: hsl(0, 100%, 67%);
+--Orangey-yellow: hsl(39, 100%, 56%);
+--Green-teal: hsl(166, 100%, 37%);
+--Cobalt-blue: hsl(234, 85%, 45%);
+
+--Light-slate-blue: hsl(252, 100%, 67%);
+--Light-royal-blue: rgb(46, 43, 233);
+--Violet-blue: hsla(256, 72%, 46%, 1);
+--Persian-blue: hsla(241, 72%, 46%, 0);
+
+--White: hsl(0, 0%, 100%);
+--Pale-blue: hsl(221, 100%, 96%);
+--Light-lavender: hsl(241, 100%, 89%);
+--Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hanken Grotesk", sans-serif;
+    /* background-color: var(--Pale-blue); */
+    background-color: var(--White);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+p{
+    margin: 0;
+    padding: 0;
+    
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 360px;
+    max-width: 500px;    
+    border-radius: 20px;    
+    background-color: var(--White);
+    overflow: hidden;
+    box-shadow: 5px 20px 30px -25px rgba(66, 68, 90, 0.5);
+}
+.result{    
+    background: linear-gradient(to bottom, rgba(78, 33, 202, 0.911), rgba(46, 43, 233, 0.959));
+    display: flex;  
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 30px 30px 0px;
+}
+.result h1{
+    color: var(--Light-lavender);
+    font-size: 18px;
+    font-weight: 800;
+}
+.result-num{
+    background-color: var(--Violet-blue);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 8px 10px 1px var(--Violet-blue);
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+.result-num:hover{
+    transform: scale(1.1);
+    transition: transform ease 1s;
+}
+.result-num p{
+    color: var(--White);
+    font-size: 55px;
+    font-weight: 800;
+    display: inline-flex;
+    
+}
+
+.result-num span{
+    color: hsla(241, 100%, 89%, 0.479);
+    font-size: 18px;
+    font-weight: 500;
+}
+.great{
+    color: var(--White);
+    font-weight: 500;
+    margin: 0;
+}
+.result .score-higher{
+    color: var(--Light-lavender);
+    font-size: 16px;
+    padding: 20px 20px;
+    text-align: center;
+    
+}
+.summary{
+    display: flex;
+    flex-direction: column;    
+    padding: 0 20px;
+    background-color: var(--White); 
+    height:400px;   
+    width: 259px;
+}
+.summary h2{
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 18px;
+}
+.reaction{
+    display: flex;
+    justify-content: space-between;
+    background-color: hsla(0, 100%, 67%, 0.075);
+    color: var(---Light-red);
+    padding: 5px 0;
+    border-radius: 10px ;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 200px;
+}
+.reaction:hover{
+    background-color: hsla(0, 100%, 67%, 0.192);
+}
+.img-container{
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.img-container p{
+    font-size: 18px;
+    margin-left: 10px;
+    
+}
+.img-container img{
+    width: 15px;
+    padding-left:10px ;
+}
+.reaction .mun-80{
+    color: var(--Dark-gray-blue);
+}
+.reaction .mun-80 span{
+    color: var(--Light-lavender);
+    padding-right:10px ;
+}
+
+
+.memory{
+    color: var(--Orangey-yellow);
+}
+.verbal{
+    color: var(--Green-teal);
+}
+.visual{
+    color: var(--Light-royal-blue);
+}
+
+button{
+    border-radius: 101px ;
+    padding: 8px  0px;
+    margin-top:30px ;
+    
+    cursor: pointer;
+    background-color: var(--Dark-gray-blue);
+    color: var(--Pale-blue);
+}
+button:hover{
+    color: hsla(222, 100%, 96%, 0.582);
+}
+
+@media screen and (max-width:375px) {
+
+
+    .container{
+        display: inline-block;
+        min-height: 800px;
+        padding-bottom: 15px;
+
+    }
+    .result{
+        padding-top: 80px;
+        width: auto;
+        /* margin: 5px; */
+        border-radius: 30px;
+        
+    }
+    .score-higher{
+        margin:  0 20px;
+    }
+
+    .summary{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto; 
+    }
+    .reaction{
+        text-align: center;
+        width: 100%;
+    }
+    button{
+        
+        padding: 15px  0px;
+   
+    }
+}
+
+
+
