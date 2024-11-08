@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --Pale-blue: rgb(224, 232, 255);
+    --Bright-blue: rgb(56, 41, 224);
+    --Very-pale-blue: rgb(245, 247, 255);
+    --Desaturated-blue: rgb(114, 128, 167);
+    --Dark-blue: rgb(31, 47, 86);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.attribution{
+    margin-top: 50px;
+}
+
+.attribution .name{
+    color: blue;
+    font-weight: 700;
+}
+body{
+    background-color: var(--Pale-blue);
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 16px;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-size:contain;
+    
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    max-height: 650px;
+    background-color: var(--Very-pale-blue);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 200px;
+    
+}
+.hero{
+    width: 100%;
+}
+.order-container{
+    margin: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-weight: 700;
+    font-size: 22px;
+    margin: 25px 0px 10px 0px;
+}
+.audio-books{
+    text-align: center;
+    color: var(--Desaturated-blue);
+    font-size: 12px;
+}
+.annual-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0px;
+    width: 100%;
+    background-color: rgba(114, 128, 167, 0.027);
+    border-radius: 10px ;
+    padding: 15px  10px;
+}
+.music-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.music-icon{
+    width: 30px;
+    height: 30px;
+}
+.music-container p{
+    
+    color: rgb(31, 47, 86);
+    font-weight: 700;
+    font-size: 12px;
+    border-radius: 5px;
+}
+.music-container span{
+    color: var(--Desaturated-blue);
+    font-weight: 500;
+    font-size: 12px;
+    
+}
+.change{
+    font-size: 12px;
+    font-weight: 900;
+    color: var(--Bright-blue);
+    border-bottom: 1px solid rgba(56, 41, 224, 0.76);
+    line-height: .6;
+    /* text-decoration: underline; */
+}
+.btn{
+    font-size: 12px;
+    width: 100%;
+    background-color:var(--Bright-blue);
+    color: var(--Pale-blue);
+    font-weight: 700;
+    padding: 9px 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0px 8px 10px 1px rgb(0, 0, 0, .2);
+    border: none;
+}
+.cancel-order{
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: var(--Desaturated-blue);
+    font-size: 12px;
+}
