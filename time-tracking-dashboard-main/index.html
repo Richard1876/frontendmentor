@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+  
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <aside>
+      <div class="side">
+        <div class="profile-container">
+          <picture>
+            <img class="img" src="./images/image-jeremy.png" alt="">
+          </picture>
+          <div class="name-container">
+          <p class="report">Report for</p>
+          <h1>Jeremy Robson</h1>
+        </div>
+            
+        </div>
+        <div class="side-btn">
+        <button class="daily" id="daily">Daily</button>
+        <button class="Weekly" id="weekly">Weekly</button>
+        <button class="Monthly" id="monthly">Monthly</button>
+      </div>
+        
+        
+      </div>
+    </aside>
+    
+    <div>
+      <section class="top-row">
+        <div class="orange top-card">
+          <div class=" bottom-card">
+            <div class="word-container">
+              <p class="work" id="work">Work</p>
+              <img class="ellipsis" src="./images/icon-ellipsis.svg" alt="">
+            </div>
+             <div class="time-container ">
+              <h2 ><span id="hrs">32</span>hrs</h2>
+              <p class="previous " >last Week - <span id="previous">1</span>hrs</p>
+             </div>
+            
+
+          </div>
+        </div>
+        <div class="blue top-card">
+          <div class=" bottom-card">
+            <div  class="play-container">
+            <p class="play" id="play">Play</p>
+            <img class="ellipsis" src="./images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="time-container-2 ">
+            <h2 ><span id="hrs-2">10</span>hrs</h2>
+            <p class="previous-2 " >last Week - <span id="previous-2">8</span>hrs</p>
+          </div>
+          </div>
+        </div>
+        <div class="red top-card">
+          <div class=" bottom-card">
+            <div  class="play-container">
+            <p class="study" id="study">Study</p>
+            <img class="ellipsis" src="./images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="time-container-3">
+            <h2 ><span id="hrs3">4</span>hrs</h2>
+            <p class="previous-3 " >last Week - <span id="previous-3">7</span>hrs</p>
+          </div>
+          </div>
+        </div>
+      </section>
+      <section class="bottom-row">
+        <div class="green top-card">
+          <div class=" bottom-card">
+            <div  class="play-container  play-container-4">
+            <p class="exercise" id="exercise">Exercise</p>
+            <img class="ellipsis" src="./images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="time-container-4">
+            <h2 ><span id="hrs4">4</span>hrs</h2>
+            <p class="previous-4 " >last Week - <span id="previous-4">5</span>hrs</p>
+          </div>
+          </div>
+        </div>
+        <div class="purple top-card">
+          <div class=" bottom-card">
+            <div  class="play-container">
+            <p class="social" id="social">Social</p>
+            <img class="ellipsis" src="./images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="time-container-5">
+            <h2 ><span id="hrs5">5</span>hrs</h2>
+            <p class="previous-5" >last Week - <span id="previous-5">10</span>hrs</p>
+          </div>
+          </div>
+        </div>
+        <div class="yellow top-card">
+          <div class=" bottom-card">
+            <div  class="play-container play-container-6">
+            <p class="self-care" id="self-care">Self Care</p>
+            <img class="ellipsis" src="./images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="time-container-6">
+            <h2 ><span id="hrs6">2</span>hrs</h2>
+            <p class="previous-6" ">last Week - <span id="previous-6">2</span>hrs</p>
+          </div>
+          </div>
+        </div>
+      </section>
+      
+      
+    </div>
+  </div>
+
+  
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
