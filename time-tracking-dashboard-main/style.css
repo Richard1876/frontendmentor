@@ -42,7 +42,7 @@ body{
     height: 1024px;
     row-gap: 60px;
     column-gap: 45px;
-    margin-top: 100px;
+    margin-top: 50px;
     flex-wrap: wrap;
 }
 .side{
@@ -433,7 +433,7 @@ picture{
     color: #BBC0FF;
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:376px) {
     
 
     .container{
