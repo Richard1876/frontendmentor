@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-size: 16px;
+    font-family: "Karla", sans-serif;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E6EFF5;
+}
+
+.container {
+    width: 635px;
+    height: 475px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 0px;
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.14);
+}
+
+.top {
+    width: 635px;
+    height: auto;
+    background-color: white;
+    padding: 30px;
+
+}
+
+.top h1 {
+    width: 324px;
+    height: 28px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #2AB3B1;
+    line-height: auto;
+    letter-spacing: -0.3px;
+    margin-bottom: 30px;
+}
+
+.top-statement {
+    display: flex;
+    flex-direction: column;
+    width: 555px;
+    height: 84px;
+    row-gap: 11px;
+}
+
+.top-statement h2 {
+    width: 367px;
+    height: 21px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.22px;
+    color: #C0DF33;
+}
+
+.headline {
+    width: 555px;
+    height: 52px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+    font-weight: 400;
+    color: #9AA7BE;
+}
+
+.bottom {
+    width: 635px;
+    height: 259px;
+    display: flex;
+    
+
+}
+
+.left {
+    width: 318px;
+    height: 279px;
+    background-color: rgba(42, 179, 177 );
+    padding: 30px;
+    color: white;
+}
+.subscription{
+    width: 182px;
+    height: 21px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.22px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.month{
+    width: 150px;
+    height: 37px;
+    font-size: 32px;
+    font-weight: 700;
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     column-gap: 11px;
+     margin-bottom:8px;
+    
+    
+}
+.per{
+    width: 78px;
+    height: 26px;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 50%;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+}
+.full-access{
+    width: 238px;
+    height: 26px;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 20px;
+    letter-spacing: -0.2px;
+    font-weight: 400;
+}
+button{
+    width: 237px;
+    height: 48px;
+    background-color: #C0DF33;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.171);
+    font-size: 16px;
+    color: white;
+    letter-spacing: -0.2px;
+    cursor: pointer;
+
+}
+button:hover{
+    background-color: #c0df33dc;
+}
+button:active{
+    background-color: #c0df33b2;
+}
+
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 318px;
+    height: 279px;
+    /* opacity: 15.19; */
+    color: white;
+    background-color: rgba(42, 179, 177, 0.849);
+    padding: 30px;
+    
+
+}
+
+.why {
+    width: 64px;
+    height: 21px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -0.22px;
+    margin-bottom: 20px;
+}
+
+.tutorials {
+    width: 238px;
+    height: 140px;
+    opacity: 75%;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: -0.17px;
+    text-align: start;
+}
+
+@media screen and (max-width: 431px) {
+    
+    .container {
+        width: 331px;
+        height: 732px;
+        flex-wrap: wrap;
+        margin-top: 80px;
+        margin-bottom: 100px;
+    }
+    .top {
+        width: 100%;
+        height: 265px;
+        background-color: white;
+        /* padding: 30px;     */
+    }
+    .top h1 {
+        width: 263px;
+        height: 23px;
+        font-size: 20px;        
+        letter-spacing: -0.25px;
+        margin-bottom: 30px;
+    }
+    .top-statement{
+        /* margin-bottom: 100px; */
+        height: 170px;
+        width: 100%;
+    }
+    .top-statement h2 {
+        width: 263px;
+        height: 40px;
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 700;
+        letter-spacing: -0.19px;
+        
+    }
+
+    .headline {
+        width: 263px;
+        height: 104px;
+        font-size: 14px;
+        line-height: 26px;
+        letter-spacing: -0.17px;
+        
+    }
+
+
+    .bottom {
+        width: 100%;
+        height: 355px;
+        display: flex;
+        flex-direction: column;    
+    }
+    .left {
+        width: 100%;
+        height: 257px;
+        background-color: rgba(42, 179, 177 );
+        padding: 30px;
+        color: white;
+        margin-bottom: 0px;
+    }
+
+    .subscription{
+        
+        margin-top: 0px;
+    }
+    .right {
+        
+        width: 100%;
+        height: 227px; 
+             
+    }
+
+    button{
+        width: 263px;   
+    }
+    .why {
+        width: 63px;
+    }
+       
+}
