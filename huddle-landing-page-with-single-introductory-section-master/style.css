@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --Violet: #674baf;
+    --Soft-Magenta: #e882e8;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+     /* background-image: url(./images/bg-desktop.svg); */
+    /* background-repeat: no-repeat; */
+     /* background-position: bottom left;  */
+    /* background-size: cover;  */
+    /* background-color: var(--Violet); */
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-image: url(./images/bg-desktop.svg);
+    background-color: var(--Violet);
+    background-repeat: no-repeat;
+    background-position:top left;
+    background-size: contain;
+    width: 1440px;
+    height: 800px;
+    padding: 60px;
+    
+}
+.logo{
+    width: 200px;
+    height: 32px;
+}
+.illustration{
+    width: 696px;
+    height: 493px;
+    margin-top: 50px;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 42PX;
+}
+.heading-container{
+    display: flex;
+    flex-direction: column;
+    width: 520px;
+    height: auto;
+    row-gap: 24px;
+    margin-top: -60PX;
+}
+.community{
+    display: flex;
+    flex-direction: column;
+    width: 520px;
+    height: 225px;
+    row-gap: 24px;
+}
+h1{
+    width: 487px;
+    height: 120px;
+    font-family: "Poppins", serif;
+    color: white;
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 600;
+
+}
+.statement{
+    width: 520px;
+    height: 81px;
+    font-size: 18px;
+    color: white;
+    line-height: 27px;
+    font-weight: 400;
+}
+.btn{
+    width: 200px;
+    height: 56px;
+    border-radius: 28px;
+    background-color: white;
+    box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.26);
+    color: #684BB1;
+    font-size: 18px;
+    line-height: 27px;
+    cursor: pointer;
+    border: none;
+}
+.btn:hover{
+    background-color: #e882e8a1;
+    color: white;
+}
+.btn:active{
+    background-color: #e882e8;
+    color: white;
+}
+footer{
+    width: 1290px;
+   display: flex;
+   align-items: center;   
+   justify-content: flex-end;
+   column-gap: 16px;
+   position: static;
+   bottom: 0px;
+   left: 0px;
+}
+a{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    
+}
+
+.fa-facebook-f{
+    color: white;    
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.fa-facebook-f:hover{
+    color: #FF52C1;
+}
+
+.fa-twitter{
+    color: white;    
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.fa-twitter:hover{
+    color: #FF52C1;
+}
+
+.fa-instagram{
+    color: white;    
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-instagram:hover{
+    color: #FF52C1;
+}
+
+@media screen and (max-width:431px) {
+    
+    
+     .container{
+        background-image: url(./images/bg-mobile.svg);
+        background-color: var(--Violet);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 375px;
+        width: 375px;
+        height: auto; 
+       padding: 0px;
+       padding-bottom: 30px;
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-start;
+        
+              
+    } 
+    
+    .logo{
+        width: 120px;
+        height: 19px;
+        margin-left: 40px; 
+        margin-top: 50px;
+            
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0px;
+    }
+    .illustration{
+        width: 269px;
+        height: 209px;
+        margin-top: 50px;
+    }
+    .heading-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 304px;
+        height: auto;
+        row-gap: 24px;
+        margin-top: 40px;
+    }
+    .community{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 304px;
+        height: auto;
+        row-gap: 24px;
+    }
+    h1{
+        width: 280px;
+        height: 72px;
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: 600; 
+        text-align: center;   
+    }
+    .statement{
+        width: 304px;
+        height: 120px;
+        font-size: 16px;
+        color: white;
+        line-height: 24px;
+        font-weight: 400;
+        text-align: center;
+    }
+    .btn{
+        width: 200px;
+        height: 40px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    footer{
+        width: auto;
+       display: flex;
+       align-items: center;   
+       justify-content: center;
+       align-items: center;
+       column-gap: 16px;
+       position:static;
+       margin-top: 70px;
+    }
+    .fa-facebook-f{  
+        width: 27.5px;
+        height: 28px; 
+    }
+    .fa-twitter{
+        width: 27.5px;
+        height: 28px; 
+    
+    }
+    .fa-instagram{
+        width: 27.5px;
+        height: 28px; 
+    }
+}
