@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  
+</head>
+<body>
+
+  
+  <div class="heading">
+    <img src="./images/logo.svg" alt="">
+  </div>
+  <div class="container">  
+    <div class="left">
+      <div class="left-top">
+        <p class="bill">Bill</p> 
+        <input class="total" id="total" type="number" placeholder="142.55" min="0">         
+          <!-- <p class="total"><img class="dollar" src="./images/icon-dollar.svg" alt=""> <span class="price">142.55</span></p>         -->
+      </div>
+      <div class="left-middle">
+        <p class="tip-percentage">Select Tip %</p>
+        <div class="btn-container" >
+          <button class="btn" id="btn-1" value="5.0" >5<span>%</span></button>
+          <button class="btn" id="btn-2" value="0.1" >10<span>%</span></button>
+          <button class="btn active" id="btn-3" value="0.15">15%</button>
+          <button class="btn" id="btn-4" value="0.25">25%</button>
+          <button class="btn" id="btn-5" value="0.5">50%</button>
+          <input  class="btn btn-white " id="custom-btn"  type="number" name="custom" id="custom-btn" placeholder="Custom">
+          
+          
+        </div>
+      </div>
+      <div class="num-container">
+        <div class="num-people-container">
+          <p class="num-people">Number of People</p>
+          <p class="cant-be" id="cant-be">Can't be zero</p>
+        </div>
+          
+          <input class="input-people" id="number-of-people" type="number" placeholder="5" min="-1">      
+      </div>
+      
+    </div>
+    <div class="right">
+      <div class="tip-amount top-tip">
+        <div>
+          <p class="tip">Tip Amount</p>
+          <p class="person">/ person </p>
+        </div>
+        <p class="zeros">$<span id="tip-per-person" >4.27</span></p>
+        
+      </div>
+      <div class="tip-amount top-tip">
+        <div class="tip-container">
+          <p class="tip">Total</p>
+          <p class="person"> / person </p>
+        </div>
+        <p class="zeros">$<span id="total-per-person">32.79</span></p>
+        
+      </div>      
+      <button class="reset-btn" id="reset-btn">Reset</button>
+      
+    </div>
+  </div> 
+   <script src="./app.js"></script>
+</body>
+</html>
