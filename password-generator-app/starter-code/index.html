@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Password generator app</title>
+</head>
+<body>
+      <h1>Password Generator</h1>
+      <div class="container">
+        <div class="Password-container">
+          <input type="text" class="password" id="password" placeholder="P4$5W0rD!">
+          <!-- <p class="password" id="password">P4$5W0rD!</p> -->
+          <button class="img-btn" id="img-btn">
+            <img  src="./assets/images/icon-copy.svg" alt="">
+          </button>
+          
+        </div>
+        <div class="inner-container">
+        <form id="form" class="form" action="/">
+          <div class="character-label-container">          
+        <label class="character-label" for="character-length">Character Length</label>
+        <p class="number-input" id="number-input" >10</p>
+        <!-- <input  class="number-input" id="number-input" type="number"   min="1" max="20" value="10"> -->
+        </div>
+        <input class="range" type="range" id="character-length" name="character-length" min="0" max="20" value="10">
+        <div class="checkbox-container"  id="uppercase-letter-container">
+          <p class="custom-checkbox" id="custom-checkbox"></p>
+          <input class="green-check" type="checkbox" id="include-uppercase-letter">
+          <label class="checkbox-label btn" for="include-uppercase-letter" >Include Uppercase Letters</label>
+        </div>
+        <div class="checkbox-container"  id="lowercase-letter-container">
+          <p class="custom-checkbox" id="custom-checkbox2"></p>
+          <input class="green-check" type="checkbox" id="include-lowercase-letter">
+          <label class="checkbox-label"  for="include-lowercase-letter">Include Lowercase Letters</label>
+        </div>
+        <div class="checkbox-container">
+          <p class="custom-checkbox" id="custom-checkbox3"></p>
+          <input class="green-check btn" type="checkbox" id="include-number">
+          <label class="checkbox-label"  for="include-number">Include Numbers</label>
+        </div>
+        <div class="checkbox-container">
+          <p class="custom-checkbox4" id="custom-checkbox4"></p>
+          <input class="green-check btn" type="checkbox" id="include-symbols">
+          <label class="checkbox-label"  for="include-symbols">Include Symbols</label>
+        </div>
+      
+      <div class="strength-container">
+        <p class="strength">Strength</p>
+        <div class="bar-container-1" id="bar-container-1">
+          <p class="too-weak">TOO WEAK!</p>
+          <p class="red-bar"></p>
+          <p class="bar-2"></p>
+          <p class=" bar-2"></p>
+          <p class=" bar-2"></p>
+        </div>
+        <div class="bar-container-2" id="bar-container-2">
+          <p class="weak">WEAK</p>
+          <p class="orange-bar"></p>
+          <p class="orange-bar"></p>
+          <p class="bar-2"></p>
+          <p class="bar-2"></p>
+        </div>
+        <div class="bar-container-3" id="bar-container-3">
+          <p class="medium">MEDIUM</p>
+          <p class="yellow-bar"></p>
+          <p class="yellow-bar"></p>
+          <p class="yellow-bar"></p>
+          <p class="bar bar-2"></p>
+        </div>
+        <div class="bar-container-4" id="bar-container-4">
+          <p class="strong">STRONG</p>
+          <p class="green-bar"></p>
+          <p class="green-bar"></p>
+          <p class="green-bar"></p>
+          <p class="green-bar"></p>
+        </div>
+        <div class="bar-container-5" id="bar-container-5">
+          <!-- <p class="strong">STRONG</p> -->
+          <p class="bar-2"></p>
+          <p class="bar-2"></p>
+          <p class="bar-2"></p>
+          <p class="bar-2"></p>
+        </div>
+      </div>
+    </form>
+    <button class="generator-btn" id="generator-btn">Generate<i class="fa-solid fa-arrow-right"></i></button>
+  </div>
+        
+      </div>
+
+      <script src="./app.js"></script>
+</body>
+</html>
