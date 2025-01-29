@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+:root{
+  --Green:#54E6AF;
+  --Blue-950:#121725;
+  --Blue-900:#2C344B;
+  --Blue-600:#5A668A;
+  --Blue-300:#C2CBE5;
+  --White:#ffffff;
+  --Red:#FB3E3E;
+
+}
+body{
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  max-width: 1440px;
+  width: 100%;
+  height: 960px;
+  padding: 80px;
+  font-family: "Chivo", serif;
+  background-color: var(--Blue-950);
+  background-image: url(./assets/desktop/image-host.jpg);
+  background-repeat: no-repeat;
+  background-position:  right;
+  /* background-position-x: 490px; */
+  background-size: 960px 654px;
+  /* overflow: hidden; */
+
+}
+main{
+  max-width: 1120px;
+  width: 100%;
+  height: 654px;
+  
+ 
+}
+.content-main-container{
+  width: 736px;
+  height: 654px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 104px;
+  
+}
+.logo-container{
+  width: 134.85px;
+  height: 56px;
+}
+.bottom-content{
+  width: 736px;
+  height: 494px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  padding: 88px 64px 0px 0px;
+  background-color: var(--Blue-950);
+  
+}
+.text-container{
+  width: 665px;
+  height: 221px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+.text-container h1{
+  color: var(--Green);
+  font-size: 40px;
+  line-height: 120%;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.text-container h1 span{
+  color: var(--White);
+}
+.text-container p{
+  width: 448px;
+  color: var(--Blue-300);
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+}
+.form-container{
+  width: 448px;
+  height: 52px;  
+  margin-bottom: 40px;
+}
+form{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+   width: 100%;
+  height: 100%; 
+  /* padding: 4px; */
+  background-color: var(--Blue-900);
+  border-radius: 999px;
+  margin-bottom: 8px;
+  position: relative;
+}
+.error{
+  border: 2px solid var(--Red);
+  border-radius: 999px;
+  
+}
+
+input{
+  width: 100%; 
+  height: 100%;
+  border: none; 
+   border-radius: 999px;
+   background-color: var(--Blue-900);
+   /* z-index: 50; */
+   
+  
+}
+
+input[type=email]{  
+  padding: 10px 24px;
+  outline: none;
+  color: var(--White);
+  background-color: transparent;
+  
+}
+
+input[type=email]::placeholder{
+  color: var(--White);
+  opacity: 50%;
+  font-size: 14px;
+  line-height: 200%;
+  font-weight: 700;
+  /* padding: 0px 24px; */
+  
+}
+button{
+  background-color: var(--Green,--White);
+  background: (rgba(255, 255, 255, 0.5));
+  /* width: 173px; */
+  height: 44px;
+  border-radius: 28px;
+  padding: 8px 32px;
+  box-shadow: 0px 2px 4px 0px rgba(84, 230, 174, 0.14);
+  font-size: 14px;
+  line-height: 200%;
+  font-weight: 700;
+  border: none;
+  color: var(--Blue-950);
+  cursor: pointer;
+  position: absolute;
+  transform: translateX(275px);
+}
+button:hover{
+  background-color: #aaf3d7;
+}
+.errMsg{
+  color: var(--Red);
+  padding: 0px 32px;
+  font-size: 12px;
+  font-weight: 700;
+  display: none;
+ 
+   
+}
+
+.logos-container{
+  display: flex;
+  column-gap: 40px;
+  width: 547.65px;
+  padding-top: 24px;
+  background-color: transparent;
+  /* position: relative; */
+}
+.patter-container{
+  
+  width: 232px;
+  height: 104px;
+  transform: translate(1120px, -70px);
+  
+  /* transform: translateY(0px); */
+  /* content: url(./assets/desktop/bg-pattern-dots.svg); */
+  /* margin-left: 100px; */
+  /* position: absolute; */
+  /* right:  -650px;
+  bottom: -45px; */
+
+}
+
+@media screen and (Max-width:769px) {
+  body{
+    max-width: 768px;
+    height: 1024px;
+    padding: 44px;
+    font-family: "Chivo", serif;
+    background-color: var(--Blue-950);
+    background-image: url(./assets/tablet/image-host.jpg);
+    background-size: 460px 868px;
+    
+    background-repeat: no-repeat;
+    background-position:  top right;
+    background-position-x: 380px ;   
+  
+  }
+  main{
+    width: 680px;    
+    height: 712px; 
+  }
+  .content-main-container{
+    width: 592px;
+    height: 712px;
+        
+  }
+  .bottom-content{
+    width: 592px;
+    height: 552px;    
+  }
+  .text-container{
+    width: 528px;
+    height: 279px;
+  }
+  .text-container h1{
+    font-size: 48px; 
+}
+.patter-container{
+  transform: translate(640px, -90px);
+}
+}
+
+@media screen and (Max-width:376px) {
+  
+  body{
+    
+    width: 375px;
+    height: 812px;
+    padding: 36px;
+    font-family: "Chivo", serif;
+    background-color: var(--Blue-950);
+    background-image: url(./assets/mobile/image-host.jpg);
+    background-size: cover;    
+    background-repeat: no-repeat;
+    background-position:left;
+    background-position-x:0px; 
+    overflow: hidden;
+    justify-content: center;
+    
+  }
+  
+  
+  main{
+    width: 375px;  
+    height: 812px;   
+    z-index: 20;  
+    overflow: auto;
+    background-color: rgba(18, 23, 37, 0.87);
+    overflow: hidden;
+
+  }
+  .content-main-container{
+    width: 375px;
+    height: 740px;
+    row-gap: 56px;
+    justify-content: center;
+    align-items: center;
+    
+        
+  }
+  .bottom-content{
+    width: 303px;
+    align-items: center;
+    height: 552px;
+    text-align: center;
+    padding: 0px;
+    background-color: transparent;
+    
+     
+  }
+  
+  .text-container{
+    width: 303px;
+    height: 214px;
+    row-gap: 16px;  
+    
+  }
+  .text-container h1{
+    font-size: 32px;
+    width: 303px;
+    height: 114px;
+  }
+  .text-container p{
+    width: 300px;
+    height: 84px;
+    font-size: 14px;
+    text-wrap: pretty;
+  }
+  .double-container{
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 40px;
+  }
+  .logos-container{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 0px;
+    width: 303px;
+    padding: 0;
+  }
+  .spotify{
+    width: 55.94px;
+    height: 16.95px;
+  }
+  .apple{
+    width: 45px;
+    height: 17px;
+  }
+  .google{
+    width: 72.97px;
+    height: 10.67px;
+  }
+  .pocket_podcast{
+    width: 75.88px;
+    height: 14.9px;
+  }
+  .form-container{
+    width: 303px;
+    height: 96px;  
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 8px;
+    justify-content: space-between;
+    width: 303px;
+    height: 100%;
+    padding: 0px;    
+    border-radius: 999px;
+    margin-bottom: 8px;
+    background-color: transparent;
+  }
+  input{
+    /* background-color: var(--Blue-900); */
+    height: 44px;
+    width: 303px;
+    padding: 0px ; 
+    border: none;
+    
+    /* background-color: transparent; */
+    
+  }
+  input[type=email]{
+    background-color: var(--Blue-900); 
+  }
+  button{
+    width: 303px;
+    position: relative;
+    transform: translateX(0px);
+  }
+    
+  .patter-container{
+    display: none; 
+  }
+}
+
