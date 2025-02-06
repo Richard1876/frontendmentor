@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Conference ticket generator</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+</head>
+<body>
+</div>
+<div class="top-circle-bg"></div>
+
+  <!-- Form starts -->
+   <div class="container" id="container">
+    <div class="squiggly-line-top">
+
+    </div>
+   <div>
+    <img class="logo" src="./assets/images/logo-full.svg" alt="">
+   </div>
+   <div class="header-container">
+    <p class="heading">Your Journey to Coding Conf 2025 Starts Here!</p>
+     
+     <p class="tag-line">Secure your spot at next year's biggest coding conference.</p>
+   </div>
+   <form id="form" type="submit">
+    <div class="upload-container">
+      <label class="upload-lable" for="file-input">Upload Avatar</label>
+      <div class="upload-input-container" id="drop-area">
+        <input type="file" id="file-input" value="" accept=".png, .jpg" size="50000"  >
+        <div class="upload-icon-container">
+          <img class="upload-icon" id="upload-icon" src="./assets/images/icon-upload.svg" alt="">
+        </div>
+        <div class="remove-change-btn-container" id="remove-change-btn-container">
+          <button id="removeImgBtn" class="btn">Remove image</button>
+          <button id="changeImgBtn"  class="btn">Change image</button>
+        </div>
+        <p class="input-instruction" id="input-instruction">Drag and drop or click to upload</p>
+      </div>
+      <div class="text-hint-container text-hint-container2">
+        <img id="icon-info" src="./assets/images/icon-info.svg" alt="">
+        <i class="fa-solid change fa-circle-info" id="change"></i> 
+        <p id="uploadHint" class="text-hint"> Upload your photo (JPG or PNG, max size: 500KB).</p>
+      </div>
+    </div>
+    <div class="input-label-container">
+      <label for="full-name">Full Name</label>      
+        <input id="full-name" class="full-name" type="text" id="full-name">
+        <div id="text-hint-container" class="text-hint-container">          
+          <i class="fa-solid fa-circle-info"></i>          
+          <p id="text-hint" class="text-hint">Please enter your full name</p>
+        </div>
+      
+    </div>
+    <div class="input-label-container">
+      <label for="email" class="email">Email Address</label>
+      <input type="email" id="email" class="email" placeholder="example@email.com">
+      <div id="text-hint-container2" class="text-hint-container">
+        <i class="fa-solid fa-circle-info"></i>  
+        <p id="text-hint2" class="text-hint">Please enter a valid email address</p>
+      </div>      
+    </div>
+    <div class="input-label-container">
+      <label for="username">GitHub Username</label>
+      <input type="text" id="Username" class="" placeholder="@yourusername">
+      <div id="text-hint-container3" class="text-hint-container">
+        <i class="fa-solid fa-circle-info"></i>  
+        <p id="text-hint3" class="text-hint">Please enter your username</p>
+      </div>
+    </div>
+    <button id="Generate-btn">Generate My Ticket</button>
+  </form>
+  <div class="squiggly-line-bottom">
+
+  </div>
+  <div class="middle-circle-bg">
+
+  </div>
+  </div>  
+ 
+
+  
+
+  
+  
+
+  
+  
+
+  
+
+  <!-- Form ends -->
+
+  <!-- Generated tickets starts -->
+   <section class="container2" id="container2">
+    <!-- <div class="top-circle-bg"></div> -->
+    <div class="squiggly-line-top"></div>
+    <div><img src="./assets/images/logo-full.svg" alt=""></div>
+    <div class="header-container2">
+      <p class="heading2">Congrats, <span id="customer-name" class="customer-name">Jonatan Kristof!</span> Your ticket is ready.</p>
+       
+       <p class="tag-line2"> We've emailed your ticket to <span class="customer-email" id="customer-email">jonatan@email.com</span> and will send updates in the run up to the event.</p>
+     </div>
+     <div class="ticket-container">
+          <div class="inner-ticket-container">
+            <img class="logo-mark" src="./assets/images/logo-mark.svg" alt="">
+            <div class="event-info">
+              <p class="coding-conf">Coding Conf</p>
+              <p class="event-detail">Jan 31, 2025 / Austin, TX</p>
+            </div>
+          </div>
+          <div class="ticket-num-container">
+            <p class="ticket-num">#01609</p>
+          </div>
+        <div class="speaker-info">
+            <div>
+              <img id="speaker-img" class="avatar" src="./assets/images/image-avatar.jpg" alt="">
+            </div>
+            <div class="speaker-details">
+              <p class="speaker-name" id="speaker-name" >Jonatan Kristof</p>
+              <div class="speaker-social-info">
+                <img class="icon-github"  src="./assets/images/icon-github.svg" alt="">
+                <p class="speaker-handle" id="speaker-handle">@jonatankristof0101</p>
+              </div>
+            </div>
+        </div>
+
+        
+
+     </div>
+     <div class="squiggly-line-bottom2">
+
+     </div>
+     <div class="middle-circle-bg2">
+   
+     </di>
+   </section>
+
+  
+
+ 
+
+  
+  
+
+  <!-- Generated tickets ends -->
+  
+  <script src="./app.js"></script>
+</body>
+</html>
